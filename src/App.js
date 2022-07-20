@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import ResourceArea from './components/ResourceArea';
+import TownMap from './components/TownMap';
+import SideMenu from './components/SideMenu';
 
 function App() {
+  const [ resources, setResources ] = useState({
+    population: 2,
+    water: 10,
+    wood: 10,
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ResourceArea resources={resources}/>
+        <div className='map-and-menu-area'>
+          <TownMap setResources={setResources}/>
+          <SideMenu />
+        </div>
     </div>
   );
 }

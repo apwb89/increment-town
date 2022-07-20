@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resource-area {
+  background-color: brown;
+  
+  width: 1200px;
+  border: 4px gold groove;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.map-and-menu-area {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-area {
+  background-color: green;
+  height: 800px;
+  width: 800px;
+  border: 4px gold groove;
+}
+
+.side-menu {
+  background-color: brown;
+  height: 800px;
+  width: 400px;
+  border: 4px gold groove;
+}
+
+.resource-box {
+  width: 33.33%;
+  height: 50px;
+  text-transform: capitalize;
+  border: 1px gold groove;
+  padding-left: 5px;
+}
+
+/*-------------Buildings--------------*/
+
+.building {
+  position: absolute;
+  border: 1px gold groove;
+  background-color: brown;
+  padding: 10px;
+}
+
+.quickloot-button {
+  border: 1px gold groove;
+  background-color: brown;
+}
+
+.woodcutters {
+  left: 100px;
+  top: 400px;
+}
+
+.quarry {
+  left: 625px;
+  top: 420px;
+}
+
+.farm {
+  left: 190px;
+  top: 700px;
+}
+
+.camp {
+  left: 450px;
+  top: 600px;
+}
+
+.lake {
+  left: 680px;
+  top: 700px;
 }
