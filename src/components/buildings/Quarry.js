@@ -1,6 +1,6 @@
 const Quarry = () => {
     return <div className='building quarry'>Quarry
-        <div className="quickloot-button">MINE</div>
+        <div className="quickloot-button">MINE!</div>
     </div>
 }
 
