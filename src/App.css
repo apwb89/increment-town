@@ -24,6 +24,15 @@
   border: 4px gold groove;
 }
 
+.tiled-map-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+  background-color: lightcoral;
+}
+
 .side-menu {
   background-color: brown;
   height: 800px;
@@ -37,6 +46,13 @@
   text-transform: capitalize;
   border: 1px gold groove;
   padding-left: 5px;
+}
+
+/*--------------Tiles----------------*/
+
+.grassland {
+  width: 40px;
+  height: 40px;
 }
 
 /*-------------Buildings--------------*/
