@@ -77,3 +77,12 @@
   left: 680px;
   top: 700px;
 }
+
+
+/*-------------------Buttons-------------------------*/
+
+.close-menu-button {
+  color: black;
+  border: 0.5px black solid;
+  width: 50%;
+}

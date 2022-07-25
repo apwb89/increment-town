@@ -10,13 +10,14 @@ function App() {
     water: 10,
     wood: 10,
   })
+  const [ menu, setMenu ] = useState('Quarry');
 
   return (
     <div className="App">
       <ResourceArea resources={resources}/>
         <div className='map-and-menu-area'>
           <TownMap setResources={setResources}/>
-          <SideMenu />
+          <SideMenu  menu={menu} setMenu={setMenu}/>
         </div>
     </div>
   );
